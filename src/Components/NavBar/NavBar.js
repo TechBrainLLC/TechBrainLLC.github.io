@@ -12,7 +12,7 @@ export const NavBar = () => {
                     <NavLink to='/Home' activeStyle>
                         Home
                     </NavLink>
-                    <NavLink to='/Home' activeStyle>
+                    <NavLink to='/About Us' activeStyle>
                         About Us
                     </NavLink>
                 </NavMenu>

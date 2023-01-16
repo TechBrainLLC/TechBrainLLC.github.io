@@ -9,7 +9,8 @@ function App() {
     <Router>
       <NavBar/>
       <Routes>
-        <Route path='/about' component={About} />
+        <Route path='/Home' component={About}></Route>
+        <Route path='/About Us' component={About}></Route>
       </Routes>
     </Router>
   );
