@@ -19,9 +19,9 @@ The TechBrain app is designed for anyone who wants to learn about machine learni
 
 ## How to get started with the TechBrain app
 
-Getting started with the TechBrain app is easy. Simply download the app from the App Store and start learning!
+Getting started with the TechBrain app is easy. Simply download the app from the App Store or Google Play, create an account, and start learning!
 
-If you have any questions or need help getting started, please feel free to contact us at TechBrainApp@gmail.com.
+If you have any questions or need help getting started, please feel free to contact us at support@techbrainllc.com.
 
 ## Conclusion
 
