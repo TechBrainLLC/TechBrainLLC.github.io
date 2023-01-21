@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e6c13ad2.css",
+    "main.js": "/static/js/main.a9b3786f.js",
+    "static/js/787.1166a57f.chunk.js": "/static/js/787.1166a57f.chunk.js",
+    "static/media/TechBrainLogo.png": "/static/media/TechBrainLogo.2a3549e6c79c181109ba.png",
+    "static/media/ExplorePage.png": "/static/media/ExplorePage.df769dcf4bdf33edca02.png",
+    "index.html": "/index.html",
+    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
+    "main.a9b3786f.js.map": "/static/js/main.a9b3786f.js.map",
+    "787.1166a57f.chunk.js.map": "/static/js/787.1166a57f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.a9b3786f.js"
+  ]
+}
