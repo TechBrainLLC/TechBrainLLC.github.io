@@ -110,23 +110,35 @@ export const DLOnAppStoreIcon = (src) => {
 export const ThirdSectionContainer = styled.section`
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
+    margin-bottom: 20px
 `;
 
 export const ThirdSectionColumn = styled.section`
     display: flex;
+    flex-direction: column;
     width: 8120%;
     max-width: 100%;
     height: auto;
     align-items: center;
-    justify-content: center;
 `;
 
 export const ThirdSectionImage = styled.img`
-    padding: 2rem 5rem;
+    padding: 2rem 5rem 1rem 5rem;
     width: 50%;
     height: auto;
+`;
+export const ThirdSectionTextHeader  = styled.text`
+    font-weight: bold;
+    font-size: 140%;
+    padding: 0rem 1rem;
+    
+`;
+
+export const ThirdSectionText = styled.text`
+    font-size: 120%;
+    padding: 0rem 1.2rem;
+    text-align: center;
 `;
 
 

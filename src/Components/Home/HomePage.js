@@ -12,6 +12,8 @@ import {
     ThirdSectionColumn,
     ThirdSectionContainer,
     ThirdSectionImage,
+    ThirdSectionText,
+    ThirdSectionTextHeader
 } from "./HomePageElements";
 
 
@@ -55,13 +57,25 @@ export const HomePage = () => {
                         '#fff',
                         <ThirdSectionContainer>
                             <ThirdSectionColumn>
-                                <ThirdSectionImage src={require('./../../Assets/ExplorePage.png')}></ThirdSectionImage>
+                                <ThirdSectionImage src={require('./../../Assets/BlueVisual.png')}></ThirdSectionImage>
+                                <ThirdSectionTextHeader>Comprehensive Courses</ThirdSectionTextHeader>
+                                <ThirdSectionText>
+                                    Rest assured that these courses will provide you with a solid understanding of machine learning
+                                </ThirdSectionText>
                             </ThirdSectionColumn>
                             <ThirdSectionColumn>
-                                <ThirdSectionImage src={require('./../../Assets/ExplorePage.png')}></ThirdSectionImage>
+                                <ThirdSectionImage src={require('./../../Assets/OrangeVisual.png')}></ThirdSectionImage>
+                                <ThirdSectionTextHeader>Easy to Understand</ThirdSectionTextHeader>
+                                <ThirdSectionText>
+                                    These courses are designed to make learning machine learning simple and understandable, no matter the age
+                                </ThirdSectionText>
                             </ThirdSectionColumn>
                             <ThirdSectionColumn>
-                                <ThirdSectionImage src={require('./../../Assets/ExplorePage.png')}></ThirdSectionImage>
+                                <ThirdSectionImage src={require('./../../Assets/GreenVisual.png')}></ThirdSectionImage>
+                                <ThirdSectionTextHeader>Interactive Quizzes</ThirdSectionTextHeader>
+                                <ThirdSectionText>
+                                Test and solidify your knowledge of machine learning through engaging quizzes
+                                </ThirdSectionText>
                             </ThirdSectionColumn>
                         </ThirdSectionContainer>,
                         '10rem', '100%'
