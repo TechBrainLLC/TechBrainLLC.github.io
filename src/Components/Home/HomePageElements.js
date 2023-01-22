@@ -4,7 +4,7 @@ import { FaBars } from 'react-icons/fa';
 
 export const PageHeader = styled.h1`
     color: #000;
-    font-size:3.5rem;
+    font-size: min(8vw, 60px);
     text-align: center;
     max-width: 900px;
     padding: 0rem 2rem;
@@ -23,7 +23,7 @@ export const Container = styled.section`
 
 export const SupportText = styled.text`
     color: #000;
-    font-size:2rem;
+    font-size: min(3vw, 40px);
     text-align: center;
     max-width: 400px;
     padding: 0rem 0rem 2rem 0rem;
@@ -53,28 +53,28 @@ export const Section = (direction, background, children, height, width) => {
 export const SupportingInfoTopSectionSection = styled.section`
     display: flex;
     flex-direction: column;
-    padding: 1rem 4rem;
-    width: 40%;
+    padding: 1rem 1rem;
+    width: 60vw;
     height: auto;
     align-items: center;
     align-self: center;
 `;
 
 export const ImageSectionL = styled.img`
-        padding: 1rem 4rem;
+        padding: 1rem 8vw;
         width: 30%;
         height: auto;
         max-width: 500px;
 `;
 
 export const ImageSectionXL = styled.img`
-        padding: 2rem 5rem;
+        padding: 2rem 0rem;
         width: 80%;
         height: auto;
 `;
 
 export const SecondSectionText = styled.text`
-    font-size: 2rem;
+    font-size: min(5vw, 2.5rem);
     max-width: 80%;
     margin-bottom: 50px;
     text-align: center;
@@ -111,34 +111,50 @@ export const ThirdSectionContainer = styled.section`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    @media screen and (max-width: 760px) {
+        display: none;
+      }
 `;
 
 export const ThirdSectionColumn = styled.section`
     display: flex;
     flex-direction: column;
-    width: 8120%;
+    width: 50%;
     max-width: 100%;
     height: auto;
     align-items: center;
+    @media screen and (max-width: 760px) {
+        display: none;
+      }
 `;
 
 export const ThirdSectionImage = styled.img`
+
     padding: 2rem 5rem 1rem 5rem;
     width: 50%;
     height: auto;
+    @media screen and (max-width: 760px) {
+        display: none;
+      }
 `;
 export const ThirdSectionTextHeader  = styled.text`
     font-weight: bold;
-    font-size: 140%;
+    font-size: min(3vw, 2rem);
+    text-align: center;
     padding: 0rem 1rem;
-    
+    @media screen and (max-width: 760px) {
+        display: none;
+      }
 `;
 
 export const ThirdSectionText = styled.text`
-    font-size: 120%;
-    padding: 0rem 1.2rem;
+    font-size: min(2.5vw, 1.5rem);
+    padding: 0rem 1.5rem;
     text-align: center;
+    @media screen and (max-width: 760px) {
+        display: none;
+      }
 `;
 
 

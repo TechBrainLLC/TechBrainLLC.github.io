@@ -1,11 +1,24 @@
 .App {
   text-align: center;
+  overflow-x: hidden
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+html {
+  /* this makes sure the padding and the border is included in the box sizing */
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

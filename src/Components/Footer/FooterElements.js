@@ -30,6 +30,7 @@ export const FooterContentSection = styled.section`
     flex-direction: row;
     justify-content: space-between;
     margin-top: 20px
+    max-width: 100%
 
 `;
 
@@ -39,15 +40,15 @@ export const FooterCompanyInfoSection = () => {
         flex-direction: row;
         align-items: center;
         align-self: center;
-        width: 50%;
+        width: min(25vw,50%);
     `;
     const CompanyText = styled.text`
         color: #000;
-        font-size: 3rem;
+        font-size: min(5vw, 3rem);
     `;
     const LogoSection = styled.img`
-        padding: 1rem 1rem 1rem 4rem;
-        width: 9rem;
+        padding: 1rem 1vw 1rem 4vw;
+        width: 9vw;
         height: auto;
         max-width: 500px;
     `;
@@ -65,7 +66,7 @@ export const FooterCompanyInfoSection = () => {
 export const FooterContentRowsSection = styled.section`
     display: flex;
     flex-direction: row;
-    padding: 1rem 5rem;
+    padding: 1rem 5vw 0rem 0rem;
 `;
 
 export const FooterContentSectionRow = (info) => {
@@ -79,14 +80,14 @@ export const FooterContentSectionRow = (info) => {
 
     const TitleText = styled.text`
         color: #000;
-        font-size: 1.5rem;
+        font-size: min(4vw, 1.5rem);
         margin-bottom: .2rem;
         font-weight: bold;
     `;
 
     const ItemText = styled(Link)`
         color: #000;
-        font-size: 1.1rem;
+        font-size: min(3vw, 1.1rem);
         padding .5rem 0rem;
         text-decoration: none;
     `;
