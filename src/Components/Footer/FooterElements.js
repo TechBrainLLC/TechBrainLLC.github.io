@@ -23,6 +23,8 @@ export const FooterSection = styled.section`
     flex-direction: column;
     max-height: 350px;
     width: 100%;
+    max-width: 100%
+    overflow: hidden;
 `;
 
 export const FooterContentSection = styled.section`
@@ -118,7 +120,7 @@ export const FooterContentSectionRow = (info) => {
 export const FooterBottom = (text) => {
     const FooterText = styled.text`
     color: #000;
-    padding: 0rem 2rem;
+    padding: 0rem .9rem;
     font-size: min(3vw, 1rem);
 
 `;

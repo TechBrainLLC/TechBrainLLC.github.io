@@ -111,7 +111,7 @@ export const CourseSpiralHorizontal = styled.img`
     padding: 2rem 0rem;
     width: 80%;
     height: auto;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1000px) {
         display: none;
     }
 `;
@@ -120,7 +120,7 @@ export const CourseSpiralVertical = styled.img`
     padding: 2rem 0rem;
     width: 80%;
     height: auto;
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 1000px) {
         display: none;
     }
 `;
@@ -130,7 +130,7 @@ export const ThirdSectionContainer = styled.section`
     flex-direction: row;
     justify-content: center;
     margin-bottom: 20px;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1000px) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -150,7 +150,8 @@ export const ThirdSectionImage = styled.img`
     padding: 2rem 5rem 1rem 5rem;
     width: 50%;
     height: auto;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1000px) {
+        padding: 2rem 0rem 1rem 0rem;
         width: 100%;
         max-width: 20rem
     }
@@ -160,7 +161,7 @@ export const ThirdSectionTextHeader = styled.text`
     font-size: min(3vw, 2rem);
     text-align: center;
     padding: 0rem 1rem;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1000px) {
         font-size: min(5vw, 2rem);
     }
 `;
@@ -169,7 +170,7 @@ export const ThirdSectionText = styled.text`
     font-size: min(2.5vw, 1.5rem);
     padding: 0rem 1.5rem;
     text-align: center;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1000px) {
         font-size: min(4vw, 2rem);
     }
 `;

@@ -42,10 +42,11 @@ export const NavLink = styled(Link)`
   align-items: center;
   align-self: center;
   text-decoration: none;
-  padding: 0rem 2.5rem 0rem 0rem;
+  padding: 0rem 4vw 0rem 0rem;
   height: 100%;
   cursor: pointer;
- 
+  font-size: min(2vw, 1.4rem)
+
 `;
   
 export const Bars = styled(FaBars)`
