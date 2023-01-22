@@ -29,7 +29,9 @@ export const Title = styled.text`
   font-size: 2.5rem;
   margin-left: 1rem;
   align-self: center;
-  
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 
 `;
 

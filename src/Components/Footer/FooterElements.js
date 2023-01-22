@@ -40,7 +40,7 @@ export const FooterCompanyInfoSection = () => {
         flex-direction: row;
         align-items: center;
         align-self: center;
-        width: min(25vw,50%);
+        width: min(50vw,50%);
     `;
     const CompanyText = styled.text`
         color: #000;
@@ -66,12 +66,12 @@ export const FooterCompanyInfoSection = () => {
 export const FooterContentRowsSection = styled.section`
     display: flex;
     flex-direction: row;
-    padding: 1rem 5vw 0rem 0rem;
+    padding: 1rem 1vw 0rem 0rem;
 `;
 
 export const FooterContentSectionRow = (info) => {
     const Container = styled.section`
-        width: 8rem;
+        width: 20vw;
         height: auto;
         padding: 3rem 0rem;
         display: flex;
@@ -119,7 +119,7 @@ export const FooterBottom = (text) => {
     const FooterText = styled.text`
     color: #000;
     padding: 0rem 2rem;
-    font-size: 1rem;
+    font-size: min(3vw, 1rem);
 
 `;
     const Container = styled.section`
