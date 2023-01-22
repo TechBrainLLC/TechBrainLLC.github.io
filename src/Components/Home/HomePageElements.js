@@ -100,7 +100,7 @@ export const DLOnAppStoreIcon = (src) => {
 
     return (
 
-        <LinkingContainer href="https://reactgo.com/react-open-link-new-tab/" target="_blank" rel="noreferrer">
+        <LinkingContainer href="https://apps.apple.com/app/id1662166914" target="_blank" rel="noreferrer">
             <Image src={src}></Image>
         </LinkingContainer>
 
