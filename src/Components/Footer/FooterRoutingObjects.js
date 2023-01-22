@@ -8,5 +8,4 @@ export const Privacy = {
 export const About = {
     "Title": "About",
     "About Us": "/About/AboutUs",
-    "Contact Us": "/About/ContactUs"
 }

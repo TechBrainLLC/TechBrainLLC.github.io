@@ -3,13 +3,11 @@ import {
     Container,
     TopSection,
     SupportText,
-    AppAdSectionTop,
+    Section,
     ImageSectionL,
-    ImageSectioXL,
+    DLOnAppStoreIcon,
     SupportingInfoSection,
 } from "./HomePageElements";
-
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 export const HomePage = () => {
@@ -17,14 +15,31 @@ export const HomePage = () => {
         <>
             <Container>
                 <PageHeader>Discover the power of Machine Learning!</PageHeader>
-                <AppAdSectionTop>
-                    <SupportingInfoSection>
-                        <SupportText>Master machine learning with our interactive mobile app. Download now and start learning today!</SupportText>
-                        <ImageSectioXL src={require('./../../Assets/DownloadOnTheAppStore.png')}></ImageSectioXL>
-                    </SupportingInfoSection>
+                {
+                    Section(
+                        '#fff',
+                        <>
+                            <SupportingInfoSection>
+                                <SupportText>Master machine learning with our interactive mobile app. Download now and start learning today!</SupportText>
+                                {DLOnAppStoreIcon(require('./../../Assets/DownloadOnTheAppStore.png'))}
+                            </SupportingInfoSection>
+                            <ImageSectionL src={require('./../../Assets/ExplorePage.png')}></ImageSectionL>
+                        </>
 
-                    <ImageSectionL src={require('./../../Assets/ExplorePage.png')}></ImageSectionL>
-                </AppAdSectionTop>
+                    )
+                }
+                {
+                    Section(
+                        '#800000',
+                        <>
+                            <ImageSectionL src={require('./../../Assets/ExplorePage.png')}></ImageSectionL>
+                            <SupportingInfoSection>
+                                <SupportText>Master machine learning with our interactive mobile app. Download now and start learning today!</SupportText>
+                                {DLOnAppStoreIcon(require('./../../Assets/DownloadOnTheAppStore.png'))}
+                            </SupportingInfoSection>
+                        </>
+                    )
+                }
             </Container>
 
         </>
