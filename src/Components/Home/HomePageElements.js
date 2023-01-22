@@ -29,15 +29,16 @@ export const SupportText = styled.text`
     margin-top: -30%;
 `;
 
-export const Section = (background, children) => {
+export const Section = (direction, background, children, height, width) => {
     const Section = styled.section`
         display: flex;
-        flex-direction: row;
+        flex-direction: ${direction};
         align-items: center;
         justify-content: center;
         align-self: center;
         background: ${background};
-        width: 100%
+        width: ${width},
+        height: ${height}
     `;
     return (
         <Section>
@@ -62,6 +63,12 @@ export const ImageSectionL = styled.img`
         width: 30%;
         height: auto;
         max-width: 500px;
+`;
+
+export const ImageSectionXL = styled.img`
+        padding: 2rem 5rem;
+        width: 80%;
+        height: auto;
 `;
 
 export const DLOnAppStoreIcon = (src) => {
