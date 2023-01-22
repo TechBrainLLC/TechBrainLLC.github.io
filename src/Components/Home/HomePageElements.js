@@ -29,13 +29,23 @@ export const SupportText = styled.text`
     margin-top: -30%;
 `;
 
-export const AppAdSectionTop = styled.section`
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-align-self: center;
-`;
+export const Section = (background, children) => {
+    const Section = styled.section`
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        background: ${background};
+        width: 100%
+    `;
+    return (
+        <Section>
+            {children}
+        </Section>
+    )
+
+}
 
 export const SupportingInfoSection = styled.section`
     display: flex;
@@ -54,10 +64,29 @@ export const ImageSectionL = styled.img`
         max-width: 500px;
 `;
 
-export const ImageSectioXL = styled.img`
-        padding: 1rem 4rem;
-        width: 50%;
+export const DLOnAppStoreIcon = (src) => {
+    const Image = styled.img`
+        display: flex;
+        width: 70%;
         height: auto;
-        max-width: 500px;
-`;
+        max-width: 600px;
+        
+    `;
 
+    const LinkingContainer = styled.a`
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        display: flex;
+    `;
+
+
+    return (
+
+        <LinkingContainer href="https://reactgo.com/react-open-link-new-tab/" target="_blank" rel="noreferrer">
+            <Image src={src}></Image>
+        </LinkingContainer>
+
+    )
+}

@@ -4,7 +4,7 @@ import {
     FooterCompanyInfoSection,
     FooterContentSection,
     FooterContentSectionRow,
-    FooterCopyright,
+    FooterBottom,
     FooterContentRowsSection
 } from "./FooterElements"
 
@@ -19,9 +19,8 @@ export const Footer = () => {
                     {FooterContentSectionRow(About)}
                     {FooterContentSectionRow(Privacy)}
                 </FooterContentRowsSection>
-
             </FooterContentSection>
-            {FooterCopyright('@ 2023 TechBrain LLC')}
+            {FooterBottom(['@ 2023 TechBrain LLC', 'TechBrainApp@gmail.com'])}
         </FooterSection>
     )
 }

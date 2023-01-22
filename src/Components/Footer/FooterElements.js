@@ -114,10 +114,10 @@ export const FooterContentSectionRow = (info) => {
 }
 
 
-export const FooterCopyright = (text) => {
+export const FooterBottom = (text) => {
     const FooterText = styled.text`
     color: #000;
-
+    padding: 0rem 2rem;
     font-size: 1rem;
 
 `;
@@ -135,7 +135,11 @@ export const FooterCopyright = (text) => {
 
     return (
         <Container>
-            <FooterText>{text}</FooterText>
+            {text.map(item => {
+                return (
+                   <FooterText>{item}</FooterText> 
+                )
+            })}
         </Container>
     )
 }
