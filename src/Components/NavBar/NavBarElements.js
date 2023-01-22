@@ -29,7 +29,7 @@ export const Title = styled.text`
   font-size: 2.5rem;
   margin-left: 1rem;
   align-self: center;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     display: none;
   }
 
@@ -51,15 +51,7 @@ export const NavLink = styled(Link)`
 export const Bars = styled(FaBars)`
   display: none;
   color: #4ed7cb;
-  @media screen and (max-width: 760px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 75%);
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
+
 `;
   
 export const NavMenu = styled.div`
@@ -68,9 +60,7 @@ export const NavMenu = styled.div`
   justify-content: flex-end;
   width: 100vw;
   white-space: nowrap; 
-  @media screen and (max-width: 760px) {
-    display: none;
-  }
+
 `;
   
 export const NavBtn = styled.nav`
@@ -80,9 +70,7 @@ export const NavBtn = styled.nav`
   justify-content: flex-end;
   width: 400px;
   max-width: 120px;
-  @media screen and (max-width: 760px) {
-    display: none;
-  }
+
 `;
   
 export const NavBtnLink = styled(Link)`
