@@ -5,7 +5,7 @@ import { FaBars } from 'react-icons/fa';
 import logo from './../../Assets/TechBrainLogo.png'
 
 export const Nav = styled.nav`
-  background: #000;
+  background: #252b32;
   display: flex;
   padding: 1rem 10%;
   z-index: 12;

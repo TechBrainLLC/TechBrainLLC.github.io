@@ -6,8 +6,12 @@ import {
     Section,
     ImageSectionL,
     DLOnAppStoreIcon,
-    SupportingInfoSection,
-    ImageSectionXL
+    SupportingInfoTopSectionSection,
+    ImageSectionXL,
+    SecondSectionText,
+    ThirdSectionColumn,
+    ThirdSectionContainer,
+    ThirdSectionImage,
 } from "./HomePageElements";
 
 
@@ -21,10 +25,10 @@ export const HomePage = () => {
                         'row',
                         '#fff',
                         <>
-                            <SupportingInfoSection>
+                            <SupportingInfoTopSectionSection>
                                 <SupportText>Master machine learning with our interactive mobile app. Download now and start learning today!</SupportText>
                                 {DLOnAppStoreIcon(require('./../../Assets/DownloadOnTheAppStore.png'))}
-                            </SupportingInfoSection>
+                            </SupportingInfoTopSectionSection>
                             <ImageSectionL src={require('./../../Assets/ExplorePage.png')}></ImageSectionL>
                         </>,
                         'auto', '100%'
@@ -34,12 +38,32 @@ export const HomePage = () => {
                 {
                     Section(
                         'column',
-                        '#c2b5a8',
+                        '#f0f0f0',
                         <>
                             <ImageSectionXL src={require('./../../Assets/CourseSpiral.png')}></ImageSectionXL>
-                            <SupportingInfoSection>From Beginners to advanced, we have courses for all</SupportingInfoSection>
+                            <SecondSectionText>
+                                From beginner to advanced, we cover the latest techniques and technologies. Improve your skills and stay ahead of the rest in this field of cutting-edge technology.
+                            </SecondSectionText>
 
                         </>,
+                        '10rem', '100%'
+                    )
+                }
+                {
+                    Section(
+                        'column',
+                        '#fff',
+                        <ThirdSectionContainer>
+                            <ThirdSectionColumn>
+                                <ThirdSectionImage src={require('./../../Assets/ExplorePage.png')}></ThirdSectionImage>
+                            </ThirdSectionColumn>
+                            <ThirdSectionColumn>
+                                <ThirdSectionImage src={require('./../../Assets/ExplorePage.png')}></ThirdSectionImage>
+                            </ThirdSectionColumn>
+                            <ThirdSectionColumn>
+                                <ThirdSectionImage src={require('./../../Assets/ExplorePage.png')}></ThirdSectionImage>
+                            </ThirdSectionColumn>
+                        </ThirdSectionContainer>,
                         '10rem', '100%'
                     )
                 }

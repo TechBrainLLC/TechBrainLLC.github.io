@@ -19,7 +19,7 @@ export const ImageSectioXL = styled.img`
 
 export const FooterSection = styled.section`
     display: flex;
-    background: #A9A9A9;
+    background: #f0f0f0;
     flex-direction: column;
     max-height: 350px;
     width: 100%;

@@ -17,6 +17,7 @@ export const Container = styled.section`
     justify-content: center;
     align-self: center;
     
+    
 
 `;
 
@@ -38,7 +39,8 @@ export const Section = (direction, background, children, height, width) => {
         align-self: center;
         background: ${background};
         width: ${width},
-        height: ${height}
+        height: ${height},
+        border-radius: 50px;
     `;
     return (
         <Section>
@@ -48,7 +50,7 @@ export const Section = (direction, background, children, height, width) => {
 
 }
 
-export const SupportingInfoSection = styled.section`
+export const SupportingInfoTopSectionSection = styled.section`
     display: flex;
     flex-direction: column;
     padding: 1rem 4rem;
@@ -69,6 +71,13 @@ export const ImageSectionXL = styled.img`
         padding: 2rem 5rem;
         width: 80%;
         height: auto;
+`;
+
+export const SecondSectionText = styled.text`
+    font-size: 2rem;
+    max-width: 80%;
+    margin-bottom: 50px;
+    text-align: center;
 `;
 
 export const DLOnAppStoreIcon = (src) => {
@@ -97,3 +106,27 @@ export const DLOnAppStoreIcon = (src) => {
 
     )
 }
+
+export const ThirdSectionContainer = styled.section`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+`;
+
+export const ThirdSectionColumn = styled.section`
+    display: flex;
+    width: 8120%;
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+`;
+
+export const ThirdSectionImage = styled.img`
+    padding: 2rem 5rem;
+    width: 50%;
+    height: auto;
+`;
+
+
