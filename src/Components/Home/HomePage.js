@@ -13,16 +13,28 @@ import {
     ThirdSectionContainer,
     ThirdSectionImage,
     ThirdSectionText,
-    ThirdSectionTextHeader
+    ThirdSectionTextHeader,
+    CourseSpiralHorizontal,
+    CourseSpiralVertical
 } from "./HomePageElements";
+
+import useWindowDimensions from "../GeneralUse/Dimensions";
+import { useState, useEffect } from "react";
 
 
 export const HomePage = () => {
+
+
+
+
+
+
     return (
         <>
             <Container>
                 <PageHeader>Discover the power of Machine Learning!</PageHeader>
                 {
+
                     Section(
                         'row',
                         '#fff',
@@ -36,20 +48,24 @@ export const HomePage = () => {
                         'auto', '100%'
 
                     )
+
                 }
                 {
-                    Section(
-                        'column',
-                        '#f0f0f0',
-                        <>
-                            <ImageSectionXL src={require('./../../Assets/CourseSpiral.png')}></ImageSectionXL>
-                            <SecondSectionText>
-                                From beginner to advanced, we cover the latest techniques and technologies. Improve your skills and stay ahead of the rest in this field of cutting-edge technology.
-                            </SecondSectionText>
+                        Section(
+                            'column',
+                            '#f0f0f0',
+                            <>
+                                <CourseSpiralHorizontal src={require(`./../../Assets/CourseSpiralHorizontal.png`)}></CourseSpiralHorizontal>
+                                <CourseSpiralVertical src={require(`./../../Assets/CourseSpiralVertical.png`)}></CourseSpiralVertical>
+                                <SecondSectionText>
+                                    From beginner to advanced, we cover the latest techniques and technologies. Improve your skills and stay ahead of the rest in this field of cutting-edge technology.
+                                </SecondSectionText>
 
-                        </>,
-                        '10rem', '100%'
-                    )
+                            </>,
+                            '10rem', '100%'
+                        )
+                        
+
                 }
                 {
                     Section(
@@ -74,7 +90,7 @@ export const HomePage = () => {
                                 <ThirdSectionImage src={require('./../../Assets/GreenVisual.png')}></ThirdSectionImage>
                                 <ThirdSectionTextHeader>Interactive Quizzes</ThirdSectionTextHeader>
                                 <ThirdSectionText>
-                                Test and solidify your knowledge of machine learning through engaging quizzes
+                                    Test and solidify your knowledge of machine learning through engaging quizzes
                                 </ThirdSectionText>
                             </ThirdSectionColumn>
                         </ThirdSectionContainer>,

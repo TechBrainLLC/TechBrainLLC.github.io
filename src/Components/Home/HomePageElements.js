@@ -107,54 +107,71 @@ export const DLOnAppStoreIcon = (src) => {
     )
 }
 
+export const CourseSpiralHorizontal = styled.img`
+    padding: 2rem 0rem;
+    width: 80%;
+    height: auto;
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
+`;
+
+export const CourseSpiralVertical = styled.img`
+    padding: 2rem 0rem;
+    width: 80%;
+    height: auto;
+    @media screen and (min-width: 800px) {
+        display: none;
+    }
+`;
+
 export const ThirdSectionContainer = styled.section`
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 20px;
-    @media screen and (max-width: 760px) {
-        display: none;
-      }
+    @media screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 export const ThirdSectionColumn = styled.section`
     display: flex;
     flex-direction: column;
-    width: 50%;
-    max-width: 100%;
+    width: 70%;
+    max-width: 70%;
     height: auto;
     align-items: center;
-    @media screen and (max-width: 760px) {
-        display: none;
-      }
 `;
 
 export const ThirdSectionImage = styled.img`
-
     padding: 2rem 5rem 1rem 5rem;
     width: 50%;
     height: auto;
-    @media screen and (max-width: 760px) {
-        display: none;
-      }
+    @media screen and (max-width: 800px) {
+        width: 100%;
+        max-width: 20rem
+    }
 `;
-export const ThirdSectionTextHeader  = styled.text`
+export const ThirdSectionTextHeader = styled.text`
     font-weight: bold;
     font-size: min(3vw, 2rem);
     text-align: center;
     padding: 0rem 1rem;
-    @media screen and (max-width: 760px) {
-        display: none;
-      }
+    @media screen and (max-width: 800px) {
+        font-size: min(5vw, 2rem);
+    }
 `;
 
 export const ThirdSectionText = styled.text`
     font-size: min(2.5vw, 1.5rem);
     padding: 0rem 1.5rem;
     text-align: center;
-    @media screen and (max-width: 760px) {
-        display: none;
-      }
+    @media screen and (max-width: 800px) {
+        font-size: min(4vw, 2rem);
+    }
 `;
 
 
