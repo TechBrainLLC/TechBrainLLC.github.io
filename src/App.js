@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavBar } from './Components/NavBar/NavBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AboutPage } from './Components/About/AboutPage';
@@ -11,24 +11,51 @@ import { TermsOfService } from './Components/Privacy/Documents/TermsOfService'
 import { PrivacyPolicy } from './Components/Privacy/Documents/PrivacyPolicy'
 
 import { Helmet } from 'react-helmet';
-import { Storage } from '@google-cloud/storage';
+
+import { getdatabase, getstorage } from './Firebase/config';
+import { list, ref } from 'firebase/storage';
+import { child } from 'firebase/database';
+import { getDownloadURL } from 'firebase/storage';
+import { getBlob } from 'firebase/storage';
+import axios from 'axios';
 
 function App() {
-  const storage = new Storage({
-    projectId: 'techbrainapp-b36b5',
-    keyFilename: 'path/to/credentials.json'
-  });
 
-  storage
-    .bucket('my-bucket')
-    .getFiles()
-    .then((results) => {
-      const files = results[0];
-      console.log('Files:', files);
-    })
-    .catch((err) => {
-      console.error('Error:', err);
-    });
+  const [firebaseDataArticleData, setFirebaseArticleData] = useState(null)
+  const storage = getstorage()
+
+  useEffect(() => {
+    const asyncEffect = async () => {
+      const getFirebaseArticleData = async () => {
+        let result = await ref(storage, 'TechBrainArticleData/Images/AttemtionMechanism.png')
+        console.log(getDownloadURL(result))
+        axios.get(
+          await getDownloadURL(result),
+
+          {
+            headers: {
+              'Content-Type': 'TechBrainArticleData/Infojson',
+              "Access-Control-Allow-Origin": "*"
+            },
+      
+          })
+          .then(response => {
+            console.log('valed response', response)
+          })
+          .catch(error => {
+            console.log('valed', error)
+          })
+          
+      }
+
+      const storageBucketData = await getFirebaseArticleData()
+      setFirebaseArticleData(storageBucketData)
+      console.log('ckpt5', storageBucketData)
+      
+
+    }
+    asyncEffect()
+  })
 
   return (
     <>
