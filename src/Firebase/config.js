@@ -3,7 +3,7 @@ import { getDatabase, } from "firebase/database";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyALengmsvAqYUsJvJaq78xLntBXZ5KbOvE",
+  apiKey: "AIzaSyCsqUnRdr_ubkM8mb42H5paxhNlTg5B0-M",
   authDomain: "techbrainapp-b36b5.firebaseapp.com",
   databaseURL: "https://techbrainapp-b36b5-default-rtdb.firebaseio.com",
   projectId: "techbrainapp-b36b5",
