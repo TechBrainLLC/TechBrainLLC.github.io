@@ -75,7 +75,7 @@ function App() {
           <Route path='/About/AboutUs' component={AboutPage()} element={AboutPage()} />
           <Route path='/Privacy/TermsOfService' component={PrivacyPage('Terms of Service', TermsOfService)} element={PrivacyPage('Terms of Service', TermsOfService)} />
           <Route path='/Privacy/PrivacyPolicy' component={PrivacyPage('Privacy Policy', PrivacyPolicy)} element={PrivacyPage('Privacy Policy', PrivacyPolicy)} />
-          <Route path='/Articles/Hub' component={ArticleHub()} element={ArticleHub()} />
+          {/*<Route path='/Articles/Hub' component={ArticleHub()} element={ArticleHub()} />*/}
         </Routes>
         <Footer></Footer>
       </Router>
