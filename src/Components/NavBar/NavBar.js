@@ -17,9 +17,9 @@ export const NavBar = () => {
                     <NavLink to='/About/AboutUs' activeStyle>
                         About Us
                     </NavLink>
-                    <NavLink to='/Articles/Hub' activeStyle>
+                    {/*<NavLink to='/Articles/Hub' activeStyle>
                         Articles
-                    </NavLink>
+                    </NavLink>*/}
                 </NavMenu>
             </Nav>
         </>
