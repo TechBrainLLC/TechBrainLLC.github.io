@@ -62,6 +62,7 @@ function App() {
   return (
     <>
       <Helmet>
+        <title>TechBrain: Learn AI</title>
         <meta name="theme-color" content="#252b32" />
         <meta name="msapplication-navbutton-color" content="#252b32" />
         <meta name="apple-mobile-web-app-status-bar-style" content="#252b32" />
